@@ -12,11 +12,6 @@ cask "antify" do
 
   app "Antify.app"
 
-  postflight do
-    ohai "Antify requires System Extension approval to function."
-    ohai "Go to: System Settings > Privacy & Security > Allow Antify"
-  end
-
   zap trash: [
     "~/Library/Application Support/Antify",
     "~/Library/Preferences/com.lester.Antify.plist",
